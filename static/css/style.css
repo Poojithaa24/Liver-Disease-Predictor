@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    background-color: darksalmon;
+}
+
+.head {
+    background-color: #6c2e1f ;
+    height: 6em;
+}
+.heading {
+    margin-top: 0;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 3em;
+    padding-top: 20px;
+    
+}
+
+.content {
+    display: flex;
+}
+
+.left {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+.image {
+    margin-top: 10em;
+    margin-top: 18em;
+    border-radius: 250px;
+    margin-left: -150px;
+    
+}
+.right {
+    height: 38em;
+    display: flex;
+    
+    width: 50%;
+    justify-content: center;
+    
+}
+
+.liver  {
+    margin-top: 5em;
+    border-radius: 15em;
+}
+
+
+.text {
+    font-size: 1.5em;
+    margin-top: 100px;
+    margin-left: 75px;
+    margin-right: 100px;
+}
+
+.direct {
+    background-color: black;
+    margin-top: 100px;
+    font-size: 30px;
+    color: darksalmon;
+    margin-bottom: 0px;
+    
+}
+
+form .button {
+    margin-top: 20px;
+    height: 50px;
+    width:  200px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #6c2e1f;
+    border: none;
+    border-radius: 5px;
+    color: darksalmon;
+    font-weight: bolder;
+}
+
+.button:hover {
+    background-color: darksalmon;
+    color: #6c2e1f;
+}
