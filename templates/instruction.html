@@ -77,7 +77,6 @@
                         <input type="text" placeholder="CREA: mg/dL" required name="CREA: mg/dL">
                     </div>
                     
-                   
                     <div class="input-box">
                         <span class="text">Gamma-Glutamyl Transferase</span>
                         <input type="text" placeholder="GGT: IU/L" required name="GGT: IU/L">
@@ -86,16 +85,37 @@
                         <span class="text">Protein</span>
                         <input type="text" placeholder="PROT: g/dL" required name="PROT: g/dL">
                     </div> 
+                </div>  
+                <h2 class="title2">Select Prediction Model</h2>
+                <div class="model-selection">
+                    <input type="radio" id="DT" name="model" value="Decision Trees" checked/>
+                    <label for="DT">Decision Tree</label><br>
+                    <input type="radio" id="LR" name="model" value="Logistic Regression" />
+                    <label for="LR">Logistic Regression</label><br> 
+                    <input type="radio" id="RT" name="model" value="Randon Forest" />  
+                    <label for="RT">Random Forest</label><br>
+                    <input type="radio" id="SVM" name="model" value="SVM" />  
+                    <label for="RT">Support Vector Machine</label><br>
+                    
+          
+                    
                 </div>
-                <div class="button">
-                    <input type="submit" value="Predict">
-                </div>
+                <input class="submit" type="submit" value="Predict" >
+                
             </form>
+                
+
             <br><br>
             <div class="pred">
             <center>{{pred}}</center>
+               
         </div>
         </div>
+        </div>
+        <div>
+ 
+                <center><h2 class="title2">Want to know the performance of each model?</h2></center>
+                <form action="/performance"><button class="predict">Click here</button></form>
         </div>
 
     </body>

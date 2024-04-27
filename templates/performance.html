@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Liver Disease Predictor</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'css/performance.css')}}">
+    </head>
+    <body>
+        <div class="head">
+            <h1 class="heading">Liver Health Predictor</h1> 
+         </div>
+         <div class="perform">
+            <div class="Classifier">
+                <i><h2>&#8227; Logistic Regression</h2></i>
+                <p>Confusion Matrix</p>
+                <table border="-">
+                    <tr>
+                        <td>375</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>26</td>
+                    </tr>
+                </table>
+                <p>Accuracy</p>
+                <span>Accuracy of Logistic Regression is 95.933</span>
+                <hr>
+            </div>
+
+            <div class="Classifier">
+                <i><h2>&#8227; Decisoin Tree Classifier</h2></i>
+                <p>Confusion Matrix</p>
+                <table border="-">
+                    <tr>
+                        <td>369</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>28</td>
+                    </tr>
+                </table>
+                <p>Accuracy</p>
+                <span>Accuracy of Decision Tree is 94.976</span>
+                <hr>
+            </div>
+
+            <div class="Classifier">
+                <i><h2>&#8227; Support Vector Classifier</h2></i>
+                <p>Confusion Matrix</p>
+                <table border="-">
+                    <tr>
+                        <td>373</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>28</td>
+                    </tr>
+                </table>
+                <p>Accuracy</p>
+                <span>Accuracy of Support Vector Classifier is 95.933</span>
+                <hr>
+            </div>
+
+            <div class="Classifier">
+                <i><h2>&#8227; Random Forest Classifier</h2></i>
+                <p>Confusion Matrix</p>
+                <table border="-">
+                    <tr>
+                        <td>375</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>28</td>
+                    </tr>
+                </table>
+                <p>Accuracy</p>
+                <span>Accuracy of Random Forest Classifier is 96.411</span>
+                <hr>
+            </div>
+
+            <div class="Classifier">
+                <i><h2>&#8227; Logistic Regression</h2></i>
+                <p>Confusion Matrix</p>
+                <table border="-">
+                    <tr>
+                        <td>375</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>26</td>
+                    </tr>
+                </table>
+                <p>Accuracy</p>
+                <span>Accuracy of Logistic Regression is 95.933</span>
+                <hr>
+            </div>
+            <div class="conclusion">
+                <h2>Conclusion</h2>
+                <div class="text">
+                    Hence we can conclude that Random Forest Classifier has the highest accuracy of 96.411.
+                    <hr>
+                </div>
+            </div>
+            <div class="text">
+                To get the code for these Classifiers 
+                <form action="/code"><button class="predict">Click here</button></form>
+            </div>
+        </div>
+        
+        
+    </body>
+</html>

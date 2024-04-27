@@ -109,11 +109,16 @@ Y.head()
 
 X_train,X_test,Y_train,Y_test = train_test_split(X,Y,train_size=0.3,random_state=9)
 
+from sklearn.preprocessing import StandardScaler
+st_x= StandardScaler()
+X_train= st_x.fit_transform(X_train)
+X_test= st_x.transform(X_test)
+
 LR = LogisticRegression(max_iter=600)
 
 LR.fit(X_train,Y_train)
 
 
-pickle.dump(LR,open('model.pkl','wb'))
-model = pickle.load(open('model.pkl','rb'))
+pickle.dump(LR,open('LR.pkl','wb'))
+LR = pickle.load(open('LR.pkl','rb'))
 
